@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Circular Std";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('main-img.png') center/cover no-repeat; /* Change the 'your-background-image.jpg' to your background image */
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #fefefe;
+}
+.neon {
+  animation: neonAnim 2s alternate-reverse infinite;
+  color: #ff0033;
+  font-size: 40px;
+}
+@keyframes neonAnim {
+  from {
+      text-shadow:
+        0 0 10px #DC143C,
+        0 0 40px #DC143C,
+        0 0 100px #DC143C;
+    }
+    to {
+      text-shadow:
+        0 0 5px #DC143C,
+        0 0 20px #DC143C,
+        0 0 60px #DC143C;
+    }
+}
+
+.input-container {
+  margin: 10px 0;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  color: #EEEEEE;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+input:hover,
+textarea:hover {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #ff0033;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #DC143C;
+}
